@@ -1,0 +1,13 @@
+<section class="my-subordinates">
+  <app-component-title [title]="'My Subordinates'"></app-component-title>
+  <div class="subordinates-list">
+    <div class="subordinate-list-item" *ngFor="let subordinate of subordinates">
+      <app-subordinate-item
+        [subordinate]="subordinate"
+      ></app-subordinate-item>
+    </div>
+    <div *ngIf="subordinates.length === 0" class="no-data-to-show">
+        No Data To Show
+    </div>
+  </div>
+</section>

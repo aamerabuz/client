@@ -1,0 +1,17 @@
+.task-form{
+    .form-actions{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        button{
+            &:last-child{
+                margin-left: 20px;
+            }
+        }
+    }
+    .error{
+        color: red;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

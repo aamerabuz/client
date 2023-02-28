@@ -1,0 +1,28 @@
+.employee-item {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  height: 62px;
+  align-items: center;
+  border-bottom: 1px solid #cccccca1;
+  padding: 0 15px;
+  &:hover {
+    background-color: #cccccc33;
+    cursor: default;
+
+  }
+  .employee-full-name {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 700;
+    .employee-first-name {
+      margin-right: 10px;
+    }
+  }
+  .employee-postion {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

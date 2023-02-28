@@ -1,0 +1,11 @@
+<section class="my-tasks">
+  <app-component-title [title]="'My Tasks'"></app-component-title>
+  <div class="task-list">
+    <div class="task-list-item" *ngFor="let task of tasks$|async">
+      <app-task-item [task]="task"></app-task-item>
+    </div>
+    <div *ngIf="!tasks$" class="no-data-to-show">
+      No Data To Show
+    </div>
+  </div>
+</section>

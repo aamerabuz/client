@@ -1,0 +1,23 @@
+.toolbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    span{
+        margin-left: 20px;
+        font-size: 24px;
+    }
+    .back-icon{
+        font-size: 30px;
+        margin-right: 20px;
+
+    }
+}

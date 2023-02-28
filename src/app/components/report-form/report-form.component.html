@@ -1,0 +1,29 @@
+<form #f="ngForm" class="report-form" (ngSubmit)="createNewReport()">
+    <fieldset ngModelGroup="name">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Report Text</label>
+          <input
+            required
+            name="reportText"
+            ngModel
+            type="text"
+            class="form-control"
+            aria-describedby="reportHelp"
+          />
+          <div id="reportHelp" class="form-text">
+            We will send the report to your manager 👌.
+          </div>
+        </div>
+    </fieldset>
+        <div class="mb-3 form-actions">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="report-close-button">
+            Close
+          </button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+          >
+            Save
+          </button>
+        </div>
+</form>

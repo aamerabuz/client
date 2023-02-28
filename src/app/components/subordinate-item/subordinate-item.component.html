@@ -1,0 +1,50 @@
+<div class="my-subordinate">
+  <div class="name">
+    <span>
+      {{ subordinate.first }} {{ subordinate.last }}
+    </span>
+  </div>
+  <div class="position">
+    {{ EmployeeType[subordinate.position] }}
+  </div>
+  <div class="assign-task-button">
+    <button
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#assignTaskModal"
+    >
+      Assign Task
+    </button>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="assignTaskModal"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" id="new-task_modal_id" #modalForm>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Create New Task</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <app-task-form [subordinate] ="subordinate"></app-task-form>
+        
+      </div>
+      <!-- <div class="modal-footer">
+        
+      </div> -->
+    </div>
+  </div>
+</div>

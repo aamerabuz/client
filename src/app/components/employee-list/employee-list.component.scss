@@ -1,0 +1,20 @@
+.employee-list-section {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  margin: auto;
+  margin-top: 50px;
+  .employee-list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    .item {
+      display: flex;
+      flex: 1;
+      .app-employee-item {
+        display: flex;
+        flex: 1;
+      }
+    }
+  }
+}

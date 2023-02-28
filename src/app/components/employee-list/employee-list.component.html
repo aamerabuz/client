@@ -1,0 +1,7 @@
+<section class="employee-list-section">
+    <div class="employee-list">
+        <div class="item" *ngFor="let employee of employeeList$|async">
+            <app-employee-item class="app-employee-item" [employee]="employee"></app-employee-item>
+        </div>
+    </div>
+</section>

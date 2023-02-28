@@ -1,0 +1,18 @@
+<div class="employee-item">
+    <div class="employee-full-name">
+        <div class="employee-first-name">
+            {{employee.first}}
+        </div>
+        <div class="employee-last-name">
+            {{employee.last}}
+        </div>
+    </div>
+    <div class="employee-postion">
+        {{employeeType[employee.position]}}
+    </div>
+    <div class="view-employee-details">
+        <button class="btn btn-primary" (click)="navigateToEmployeeDetails()">
+            View
+        </button>
+    </div>
+</div>

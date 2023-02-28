@@ -1,0 +1,6 @@
+<div class="toolbar" role="banner">
+  <span>{{ title }}</span>
+  <div class="back-icon" *ngIf="showHomeIcon" (click)="navigateToHome()">
+      <fa-icon [icon]="arrowLeft"></fa-icon>
+  </div>
+</div>

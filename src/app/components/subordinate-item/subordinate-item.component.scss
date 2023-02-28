@@ -1,0 +1,29 @@
+.my-subordinate {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 45px;
+  align-items: center;
+  font-size: 18px;
+  padding-left: 15px;
+  &:hover {
+    background-color: #cccccc33;
+    cursor: default;
+  }
+  .name {
+    display: inherit;
+    flex: 1;
+    font-weight: 600;
+    color: black;
+  }
+  .position {
+    display: inherit;
+    flex: 1;
+    font-weight: 600;
+    color: #606060;
+  }
+  .assign-task-button {
+    display: inherit;
+    flex: 1;
+  }
+}
